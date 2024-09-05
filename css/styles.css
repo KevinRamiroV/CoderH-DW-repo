@@ -105,7 +105,7 @@
     cursor: pointer;
 }
 .Main-contact button:hover{
-    box-shadow: 0 0 20px #bc4442;
+    box-shadow: 0 0 30px #cf2421;
  }
 .Main-contact button a{
     text-decoration: none;
@@ -215,7 +215,7 @@
 .Product-img{
     width: 150px;
     border-radius: 50%;
-    padding-top: 10px;
+    padding: 10px;
 }
 .Product p{
     font-size: 1rem;
@@ -223,10 +223,14 @@
 .Product button{
     margin: 10px;
     padding: 5px 80px;
-    background-color: #bc4442;
+    background-color: #cf2421;
     border: 2px solid transparent;
     border-radius: 8px;
     cursor: pointer;
+}
+.Product-price{
+    font-weight: bold;
+    padding: 10px;
 }
 .Cart-icon{
     width: 25px;
@@ -244,6 +248,40 @@
     justify-content: center;
     
 }
+.Form-Container div form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid black;
+    width: 500px;
+    
+}
+.Form-element{
+    padding: 10px 0 10px 0;
+    width: 400px;
+    margin-left: 25px;
+}
+.Form-element input{
+    width: 400px;
+}
+.Form-element textarea{
+    resize: none; /* Deshabilita el redimensionamiento */
+    width: 100%;
+    min-height: 200px;
+}
+.Form-element p{
+    padding: 0 0 10px 0;
+}
+.Form-Submit{
+    background-color: #cf2421;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 5px 80px;
+}
+
 .footer {
     position: relative;
     bottom: 0;
