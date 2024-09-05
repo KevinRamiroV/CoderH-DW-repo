@@ -7,8 +7,8 @@
 }
 .Navbar {
     display: grid;
-    grid-template-columns: 0.3fr 1fr;
-    height: 120px;
+    grid-template-columns: 1fr 0.5fr;
+    min-height: 125px;
     background-color: #6f6565;
     border-bottom: 7px solid #ee5351;
 }
@@ -49,6 +49,12 @@
 .Navbar-Links ul a:active{
     color: #bf3a3a;
     border-bottom: 3px solid #bf3a3a;
+}
+.button-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 30px 15px 0 0;
 }
 .Home{
     width: 100%;
