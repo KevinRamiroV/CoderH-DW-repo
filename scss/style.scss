@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+$primary-color: #ee5351;
+$secondary-color: #bf3a3a;
+$tertiary-color: #cf2421;
+$white-color: #ffff;
+$primary-font: "Quicksand", sans-serif;
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
+    font-family: $primary-font;
 }
-$primary-color: #ee5351;
-$secondary-color: #bf3a3a;
+
 
 
 // Navbar
@@ -48,20 +55,20 @@ $secondary-color: #bf3a3a;
             margin: 10px 30px 0 10px;
             text-decoration: none;
             list-style-type: none;
-            font-family: "Quicksand", sans-serif;
+            font-family: $primary-font;
             font-size: 22px;
             font-weight: bold;
-            color:white;
+            color:$white-color;
             padding: 4px 5px 4px 5px;
             transition: 0.3s ease;
             cursor: pointer;
             border-bottom: 5px solid transparent;
             &:hover {
-                color: #bf3a3a;
+                color: $secondary-color;
                 border-bottom: 3px solid $secondary-color;
             }
             &:active{
-                color: #bf3a3a;
+                color: $secondary-color;
                 border-bottom: 3px solid $secondary-color;
             }
         }
@@ -73,7 +80,7 @@ $secondary-color: #bf3a3a;
 
 .Home{
     min-height: 100vh;
-    background:rgb(241, 241, 241);
+    background:$white-color;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.3fr 0.3fr;
@@ -88,24 +95,24 @@ $secondary-color: #bf3a3a;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-bottom: 7px solid #ee5351;
+    border-bottom: 7px solid $primary-color;
     max-height: 85vh;
     min-height: 85vh;
     .H_title{
         margin-bottom: 200px;
         margin-left: 130px;
         font-size: 3rem;
-        color: #ee5351;
+        color: $primary-color;
         font-weight: bolder;
         border-bottom: 2px solid #b73939;
         position: absolute;
-        font-family: "Quicksand", sans-serif;
+        font-family: $primary-font;
     }
     .H_text{
         display: flex;
         flex-direction: column;
         margin: 10px 0 0 130px;
-        color: white;
+        color: $white-color;
         font-size: 1.5rem;
         font-weight: bold;
         position: absolute;
@@ -118,7 +125,7 @@ $secondary-color: #bf3a3a;
         button{
             padding: 15px 28px;
             background-color: #bc4442;
-            color: white;
+            color: $white-color;
             border: 2px solid transparent;
             border-radius: 8px;
             font-size: 18px;
@@ -128,7 +135,7 @@ $secondary-color: #bf3a3a;
             cursor: pointer;
 
             &:hover{
-                box-shadow: 0 0 30px #cf2421;
+                box-shadow: 0 0 30px $tertiary-color;
             }
 
             a{
@@ -168,7 +175,7 @@ $secondary-color: #bf3a3a;
             flex-direction: column;
             p{
                 padding: 15px 0 0 0;
-                font-family: "Quicksand", sans-serif;
+                font-family: $primary-font;
                 font-size: 2rem;
                 font-weight: 500;
             }
@@ -194,7 +201,7 @@ $secondary-color: #bf3a3a;
             justify-items: center;
             p{
                 padding: 15px 0 0 0;
-                font-family: "Quicksand", sans-serif;
+                font-family: $primary-font;
                 font-size: 1.4rem;
                 font-weight: 500;
             }
@@ -226,7 +233,7 @@ $secondary-color: #bf3a3a;
     grid-template-rows:1fr;
     width: 100%;
     min-height: 100vh;
-    background:rgb(241, 241, 241);
+    background:$white-color;
     .P_header{
         display: flex;
         justify-content: center;
@@ -260,6 +267,7 @@ $secondary-color: #bf3a3a;
             }
             div{
                 display: flex;
+                flex-direction: column;
                 .P_title{
                     font-size: 1rem;
                     margin: 0 20px;
@@ -268,14 +276,14 @@ $secondary-color: #bf3a3a;
             }
             .P_price{
                 font-weight: bold;
-                padding: 10px;
+                margin: 0;
                 font-size: 1.2rem;
                 text-align: center;
             }
             button{
                 margin: 10px;
                 padding: 0.5rem 4rem;
-                background-color: #cf2421;
+                background-color: $tertiary-color;
                 border: 2px solid transparent;
                 border-radius: 8px;
                 cursor: pointer;
@@ -295,7 +303,7 @@ $secondary-color: #bf3a3a;
     grid-template-rows: 0.1fr 1fr;
     width: 100%;
     min-height: 100vh;
-    background:rgb(241, 241, 241);
+    background:$white-color;
     .C_header{
         padding: 25px 0 50px 0;
         font-size: 2rem;
@@ -341,7 +349,8 @@ $secondary-color: #bf3a3a;
                     }
                 }
                 .F_submit{
-                    background-color: #cf2421;
+                    background-color: $tertiary-color;
+                    color: $white-color;
                     border: 2px solid transparent;
                     border-radius: 8px;
                     cursor: pointer;
@@ -366,13 +375,13 @@ $secondary-color: #bf3a3a;
     padding: 40px 0;
     height: 120px;
     background-color: #6f6565;
-    border-top: 7px solid #ee5351;
+    border-top: 7px solid $primary-color;
     display: flex;
     justify-content: center;
     p{
-        font-family: "Quicksand", sans-serif;
+        font-family: $primary-font;
         font-size: 1rem;
-        color: white;
+        color: $white-color;
         font-weight: 600;
     }
 }
@@ -380,7 +389,7 @@ $secondary-color: #bf3a3a;
 
 // Responsive
 
-// Small devices (landscape phones, 576px and up)
+// Small devices
 @media (max-width: 768px) { 
     .H_main{
         .H_title{
@@ -445,7 +454,7 @@ $secondary-color: #bf3a3a;
                 button{
                     margin: 10px;
                     padding: 2rem 0.5rem;
-                    background-color: #cf2421;
+                    background-color: $tertiary-color;
                     border: 2px solid transparent;
                     border-radius: 8px;
                     cursor: pointer;
@@ -501,25 +510,109 @@ $secondary-color: #bf3a3a;
  }
  
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
-
+// Medium devices
+@media ((min-width:768px) and (max-width:992px)) { 
+    .Product_home{
+        .P_content{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            width: 100%;
+            .P_product{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 50px;
+                border: 1px solid gray;
+                border-radius: 8px;
+                .P_img{
+                    width: 150px;
+                    border-radius: 50%;
+                    padding: 10px;
+                }
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    .P_title{
+                        font-size: 1rem;
+                        margin: 0 20px;
+                        font-weight: 600;
+                        padding: 3px 0 0 0;
+                    }
+                }
+                .P_price{
+                    font-weight: bold;
+                    padding: 10px;
+                    margin: 0;
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+                button{
+                    margin: 10px;
+                    padding: 0.5rem 4rem;
+                    background-color: $tertiary-color;
+                    border: 2px solid transparent;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    .P_cart_icon{
+                        width: 25px;
+                    }
+                }
+            }
+        }
  }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-
+}
+// Large devices
+@media ((min-width: 992px) and (max-width:1200px)) { 
+    .Product_home{
+        .P_content{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            width: 100%;
+            .P_product{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 50px;
+                border: 1px solid gray;
+                border-radius: 8px;
+                .P_img{
+                    width: 150px;
+                    border-radius: 50%;
+                    padding: 10px;
+                }
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    .P_title{
+                        font-size: 1rem;
+                        margin: 0 20px;
+                        font-weight: 600;
+                        padding: 3px 0 0 0;
+                    }
+                }
+                .P_price{
+                    font-weight: bold;
+                    padding: 10px;
+                    margin: 0;
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+                button{
+                    margin: 10px;
+                    padding: 0.5rem 4rem;
+                    background-color: $tertiary-color;
+                    border: 2px solid transparent;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    .P_cart_icon{
+                        width: 25px;
+                    }
+                }
+            }
+        }
  }
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-    
- }
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) { 
-
- }
-
+}
 
 
